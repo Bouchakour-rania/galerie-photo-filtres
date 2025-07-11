@@ -1,0 +1,51 @@
+/* galerie.css */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.boutons {
+  margin-bottom: 20px;
+}
+
+.boutons button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background-color: #3498db;
+  color: white;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.boutons button:hover {
+  background-color: #2980b9;
+}
+
+.galerie {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.galerie img {
+  width: 100%;
+  height: auto;
+  transition: filter 0.3s ease;
+}
+
+.grayscale {
+  filter: grayscale(100%);
+}
+
+.blur {
+  filter: blur(4px);
+}
